@@ -35,5 +35,5 @@ jobs:
       - name: build static resources
         run: npm run build
         env:
-          GH_API_TOKEN: ${GH_API_TOKEN}
-          GH_USER_NAME: ${GH_USER_NAME}
+          GH_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
+          GH_USER_NAME: ${{ secrets.GH_USER_NAME }}
