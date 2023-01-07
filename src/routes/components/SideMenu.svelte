@@ -7,7 +7,7 @@
 <UnorderedList expressive>
 	{#each issues as issue}
 		<ListItem>
-			<Link href="/posts/{issue.id}">{issue.title}</Link>
+			<Link href="posts/{issue.id}">{issue.title}</Link>
 		</ListItem>
 	{/each}
 </UnorderedList>
