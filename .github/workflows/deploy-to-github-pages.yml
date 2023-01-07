@@ -28,6 +28,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: setup node.js
         uses: actions/setup-node@v3.6.0
-        
+      
+      - name: setup app env
+        run: npm i
+      
       - name: build static resources
         run: npm run build
