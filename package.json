@@ -11,10 +11,13 @@
 	},
 	"devDependencies": {
 		"@apollo/client": "^3.7.3",
+		"@smui/button": "^7.0.0-beta.0",
+		"@smui/card": "^7.0.0-beta.0",
+		"@smui/layout-grid": "^7.0.0-beta.0",
+		"@smui/list": "^7.0.0-beta.0",
 		"@sveltejs/adapter-auto": "^1.0.0",
 		"@sveltejs/adapter-static": "^1.0.0",
 		"@sveltejs/kit": "^1.0.0",
-		"carbon-components-svelte": "^0.71.0",
 		"cross-fetch": "^3.1.5",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
@@ -26,5 +29,8 @@
 		"svelte-markdown": "^0.2.3",
 		"vite": "^4.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"svelte-material-ui": "^7.0.0-beta.0"
+	}
 }
