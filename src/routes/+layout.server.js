@@ -17,6 +17,7 @@ query {
               ... on Issue {
                 id
                 title
+                body
               }
             }
           }
@@ -35,7 +36,8 @@ export const load = async () => {
 			issues.push({
 				status: issue.fieldValueByName.name,
 				id: issue.content.id,
-				title: issue.content.title
+				title: issue.content.title,
+				body: issue.content.body
 			});
 		}
 	}

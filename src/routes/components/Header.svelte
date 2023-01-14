@@ -1,5 +1,12 @@
 <script>
-	import { Header } from 'carbon-components-svelte';
+    import { base } from '$app/paths';
 </script>
 
-<Header platformName="github-as-blog"></Header>
+<a href="{base}/"><h1>github-as-blog</h1></a>
+
+<style>
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+</style>

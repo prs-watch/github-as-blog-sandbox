@@ -1,14 +1,14 @@
 <script>
-	import { UnorderedList, ListItem, Link } from 'carbon-components-svelte';
+	import List, { Item, Text } from '@smui/list';
 	import { base } from '$app/paths';
 
 	export let issues;
 </script>
 
-<UnorderedList expressive>
+<List>
 	{#each issues as issue}
-		<ListItem>
+		<Item nonInteractive>
 			<a href="{base}/posts/{issue.id}">{issue.title}</a>
-		</ListItem>
+		</Item>
 	{/each}
-</UnorderedList>
+</List>
