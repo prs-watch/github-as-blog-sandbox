@@ -18,6 +18,12 @@ query {
                 id
                 title
                 body
+                labels (first: 5) {
+                  nodes {
+                    name
+                    color
+                  }
+                }
               }
             }
           }
@@ -37,7 +43,8 @@ export const load = async () => {
 				status: issue.fieldValueByName.name,
 				id: issue.content.id,
 				title: issue.content.title,
-				body: issue.content.body
+				body: issue.content.body,
+				labels: issue.content.labels.nodes
 			});
 		}
 	}

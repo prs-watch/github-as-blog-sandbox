@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 
 /** npm run build --dev */
-const dev = process.argv.includes('dev');
+const dev = process.env.NODE_ENV == 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
